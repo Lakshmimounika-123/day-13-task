@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+[title]{
+    padding: 50px;
+    border:2px solid red;
+}
+[title="tiger"]
+{
+    border-radius: 20px;
+    background-color: aqua;
+    box-shadow: 5px 6px green;
+}
+[alt="logo"]{
+    background-color: lightcoral;
+}
+[name|="whatsapp"]{
+    border-radius: 20px;
+    background-color: gray;
+    padding:50px;
+    
+}
+[name^="instagram"]{
+    background-color: gray;
+    padding: 30px;
+}
+[name$="chat"]{
+    padding: 20px; 
+    border-radius:20px;
+    background-color: gray;
+}
+[name~="facebook"]
+{
+    background-color: gray;
+    padding: 30px;
+}
+[name*=" "]{
+    border: 2px solid red;
+}
+[class="form"]
+{
+    background-image:linear-gradient(aqua,white);
+}
+[name="first name"]{
+    background-color: aquamarine;
+    color:red;
+}
+[placeholder]{
+    background-color: blue;
+    box-shadow: 2px 2px red;
+    height:5vh;
+}
+[name="gender"]{
+    border-radius: 20px;
+
+}
+.gallery{
+    border:2px solid green;
+    width:fit-content;
+}
+[value]{
+  background-image:linear-gradient(orange,green)
+}
+
+    
+</style>
+<body>
+    <h1>Animals</h1>
+    <div class="container">
+ <div class="gallery" > <img src="../lion.jfif"alt="logo"title="tiger"/>
+    <img src="../elephant.jfif"alt="logo"title="elephant"/>
+    <img src="../horse.jfif"alt="logo"title="horse"/>
+    <img src="../jiraffee.jfif"alt="logo"title="jiraffee"/>
+    </div>
+    <div>
+    <h1>Social madia apps</h1>
+    <img src="./Instagram.jfif"name="instagram photo"/>
+    <img src="./whatsapp.jfif"name="whatsapp"/>
+    <img src="./Sharechat.png"name="Sharechat"/>
+    <img src="./facebook.png"name="facebook"/></div></div>
+</div><br>
+<fieldset>
+<div class="form">
+    <h1>Forms</h1>
+    <label for="fname">First name:</label>
+    <input type="text"id="fname"name="first name"placeholder="Enter your name"><br><br>
+    <label for="sname">Second name:</label>
+    <input type="text"id="sname"name="Second name"placeholder="enter your name"><br><br>
+    <laber for="number">Number</laber>
+    <input type="number"max="10"min="1"><br><br>
+    <label for="mobile">Mobile number:</label>
+    <input type="tel"id="mobile"name="mobile"pattern="[0-9]{10}"/><br><br>
+    <label for="mail">Emil</label>
+    <input type="email"id="mail"name="mail"placeholder="enter your email"><br><br>
+    <label for="gender">Gendet</label><br>
+    <input type="radio"id="male"name="gender">male</input><br>
+    <input type="radio"id="female"name="gender">female</input><br><br>
+    <label for="skills">Skills</label><br>
+    <input type="checkbox"id="dancing"name="skills">dancing</input><br>
+    <input type="checkbox"id="singing"name="skills">singing</input><br><br>
+    <input type="submit"value="submit"><br>
+    <input type="reset"value="clear">
+</fieldset>
+
+    
+</div>
+
+    
+    
+    
+</body>
+</html>
